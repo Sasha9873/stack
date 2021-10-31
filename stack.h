@@ -7,7 +7,7 @@
     #include <cstring>
     #include <cmath>
 
-    #define CHECK 0
+    #define CHECK 2
 
     #if CHECK >= 2
         #define STACK_USE_HASH
@@ -37,9 +37,10 @@
         int begin_canary = CANARY_VALUE;
         #endif
 
-        int *data = POINTER_13; //адрес массива data[capacity]
-        size_t capacity = 0; //требуемый размер массива
+        size_t capacity = 1; //требуемый размер массива
         size_t current_size = 0;//текущий размер массива
+        int *data = POINTER_13; //адрес массива data[capacity]
+
         FILE* file_with_errors = NULL;
 
         #ifdef STACK_USE_CANARY
@@ -80,12 +81,71 @@
                         WRONG_HASH        = -13}
     errors_t;
 
+    /**
+     * Creates(allocates memory) data(massif with numbers which we push and pop from stack). Check if someone have called this function
+     * twice.
+     *
+     * @param [in] stack1 Pointer to stack
+     *
+     * @returns 0 if all is normal, NOT_MEMORY if we have not enough memory, TWO_CTOR if we have called this function twice.
+     */
     int stack_ctor(Stack* stack1);
+
+    /**
+     * Puts a new value in the massif data if it is need allocates new memory. Changes(+ 1) current_size in stack, changes capacity
+     * if we have allocated new memory.
+     *
+     * @param [in] stack1 Pointer to stack
+     * @param [in] value Value we need to push in stack
+     *
+     * @returns 0 if all is normal, NOT_MEMORY if we have not enough memory.
+     */
     int stack_push(Stack* stack1, int value);
+
+    /**
+     * Deletes last value in the massif data if it is need allocates new memory. Changes(- 1) current_size in stack, changes capacity
+     * if we have allocated new memory.
+     *
+     * @param [in] stack1 Pointer to stack
+     *
+     * @returns 0 if all is normal, NOT_MEMORY if we have not enough memory.
+     */
     int stack_pop(Stack* stack1);
+
+    /**
+     * Puts poison in the data, free data's memory. Puts poison in the pointer to data, in the current_size of data, in the capacity.
+     *
+     * @param [in] stack1 Pointer to stack
+     *
+     * @returns 0 if all is normal, STACK_POINTER if stack pointer already consists of poison.
+     */
     int stack_dtor(Stack* stack1);
+
+    /**
+     * Checks all in stack.
+     *
+     * @param [in] stack1 Pointer to stack
+     *
+     * @returns 0 if all is normal, code of the error if something is wrong.
+     */
     errors_t stack_ok(Stack* stack1);    //enum errors stack_ok
+
+     /**
+     * Prints all infornation about the stack in file_with_errors.
+     *
+     * @param [in] stack1 Pointer to stack
+     *
+     * @returns 0 if all is normal.
+     */
     int stack_dump(Stack* stack1, errors_t reason = ALL_OK);
+
+    /**
+     * Counts massif data hash.
+     *
+     * @param [in] stack1 Pointer to stack
+     *
+     * @returns counted hash value.
+     */
     int stack_hash(Stack* stack1, errors_t reason = ALL_OK);
 
 #endif // STACK_H_INCLUDED

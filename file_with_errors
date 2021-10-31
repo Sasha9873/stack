@@ -1,344 +1,928 @@
-Called from stack_ctor() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(79),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 0
+Called from stack_ctor() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(30),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 1
    current size = 0
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
+      c[o](first canary) = badded
+      [1] = 0
+      c[2](second canary)(00000000007114a8) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(87),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 0
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 1
    current size = 0
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
+      c[o](first canary) = badded
+      [1] = 0
+      c[2](second canary)(00000000007114a8) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(151),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 2
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 1
    current size = 1
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      [1](00000000009714a4, 00000000009714a4) = 0
+      c[o](first canary) = badded
+      *[1] = 10
+      c[2](second canary)(00000000007114a8) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(87),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 2
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 1
    current size = 1
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      [1](00000000009714a4, 00000000009714a4) = 0
+      c[o](first canary) = badded
+      *[1] = 10
+      c[2](second canary)(00000000007114a8) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(151),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 2
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 4
    current size = 2
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      [3] = 0
+      [4] = 0
+      c[5](second canary)(00000000007114b4) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(87),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 2
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 4
    current size = 2
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      [3] = 0
+      [4] = 0
+      c[5](second canary)(00000000007114b4) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(151),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 4
    current size = 3
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      [3](00000000009714ac, 00000000009714ac) = 0
-      [4](00000000009714b0, 00000000009714b0) = 0
-      [5](00000000009714b4, 00000000009714b4) = 0
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      [4] = 0
+      c[5](second canary)(00000000007114b4) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(87),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 4
    current size = 3
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      [3](00000000009714ac, 00000000009714ac) = 0
-      [4](00000000009714b0, 00000000009714b0) = 0
-      [5](00000000009714b4, 00000000009714b4) = 0
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      [4] = 0
+      c[5](second canary)(00000000007114b4) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(151),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 4
    current size = 4
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      [4](00000000009714b0, 00000000009714b0) = 0
-      [5](00000000009714b4, 00000000009714b4) = 0
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      c[5](second canary)(00000000007114b4) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(87),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 4
    current size = 4
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      [4](00000000009714b0, 00000000009714b0) = 0
-      [5](00000000009714b4, 00000000009714b4) = 0
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      c[5](second canary)(00000000007114b4) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(151),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
    current size = 5
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      *[4](00000000009714b0, 00000000009714b0) = 89
-      [5](00000000009714b4, 00000000009714b4) = 0
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      [6] = 1694498917
+      [7] = 30416
+      [8] = 7405904
+      [9] = 0
+      [10] = 1677721700
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(87),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
    current size = 5
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      *[4](00000000009714b0, 00000000009714b0) = 89
-      [5](00000000009714b4, 00000000009714b4) = 0
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      [6] = 1694498917
+      [7] = 30416
+      [8] = 7405904
+      [9] = 0
+      [10] = 1677721700
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(151),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
    current size = 6
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      *[4](00000000009714b0, 00000000009714b0) = 89
-      *[5](00000000009714b4, 00000000009714b4) = 744
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      [7] = 30416
+      [8] = 7405904
+      [9] = 0
+      [10] = 1677721700
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_pop() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(158),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
    current size = 6
-   data[000000000061fdf0] = 00000000009714a0
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      *[4](00000000009714b0, 00000000009714b0) = 89
-      *[5](00000000009714b4, 00000000009714b4) = 744
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      [7] = 30416
+      [8] = 7405904
+      [9] = 0
+      [10] = 1677721700
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_pop() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(192),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
-   current size = 5
-   data[000000000061fdf0] = 00000000009714a0
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 7
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      *[4](00000000009714b0, 00000000009714b0) = 89
-      [5](00000000009714b4, 00000000009714b4) = 666
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      [8] = 7405904
+      [9] = 0
+      [10] = 1677721700
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(87),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
-   current size = 5
-   data[000000000061fdf0] = 00000000009714a0
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 7
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      *[4](00000000009714b0, 00000000009714b0) = 89
-      [5](00000000009714b4, 00000000009714b4) = 666
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      [8] = 7405904
+      [9] = 0
+      [10] = 1677721700
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(151),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
-   current size = 6
-   data[000000000061fdf0] = 00000000009714a0
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 8
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      *[4](00000000009714b0, 00000000009714b0) = 89
-      *[5](00000000009714b4, 00000000009714b4) = 192
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      [9] = 0
+      [10] = 1677721700
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_pop() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(158),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
-   current size = 6
-   data[000000000061fdf0] = 00000000009714a0
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 8
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      *[4](00000000009714b0, 00000000009714b0) = 89
-      *[5](00000000009714b4, 00000000009714b4) = 192
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      [9] = 0
+      [10] = 1677721700
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_pop() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(192),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
-   current size = 5
-   data[000000000061fdf0] = 00000000009714a0
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 9
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *[2](00000000009714a8, 00000000009714a8) = 7
-      *[3](00000000009714ac, 00000000009714ac) = 77
-      *[4](00000000009714b0, 00000000009714b0) = 89
-      [5](00000000009714b4, 00000000009714b4) = 666
-      [6](00000000009714b8, 00000000009714b8) = 697360080
-      [7](00000000009714bc, 00000000009714bc) = 63796
-      [8](00000000009714c0, 00000000009714c0) = 9896272
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      [10] = 1677721700
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
    }
-   file_with_errors[000000000061fe08] = 00007ff91555fa90
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
 }
 
-Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.main.cpp(87),
-Stack[000000000061fdf0](ok)
-{
-   capacity = 9
-   current size = 5
-   data[000000000061fdf0] = 00000000009714a0
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 9
+   data[000000000061fde8] = 00000000007114a0
    {
-      *[0](00000000009714a0, 00000000009714a0) = 10
-      *[1](00000000009714a4, 00000000009714a4) = 659
-      *
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      [10] = 1677721700
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 10
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 10
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      [11] = 30417
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 11
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 11
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      [12] = 7405904
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 12
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      *[12] = 77
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_pop() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(95),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 12
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      *[12] = 77
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_pop() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(126),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 11
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      [12] = 666
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 11
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      [12] = 666
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 12
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      *[12] = 192
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_pop() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(95),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 12
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      *[12] = 192
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_pop() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(126),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 11
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      [12] = 666
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(38),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 11
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      [12] = 666
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_push() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(88),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 12
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      *[12] = 8987
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_pop() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(95),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 12
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      *[12] = 8987
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
+Called from stack_pop() at C:\Users\lenovo\Desktop\infa\C\summer_school\stack\stack.cpp(126),
+Hash is ok
+Stack[000000000061fdd0](ok)
+   stack_begin_canary = badded
+   capacity = 15
+   current size = 11
+   data[000000000061fde8] = 00000000007114a0
+   {
+      c[o](first canary) = badded
+      *[1] = 10
+      *[2] = 659
+      *[3] = 7
+      *[4] = 77
+      *[5] = 89
+      *[6] = 744
+      *[7] = 89
+      *[8] = 744
+      *[9] = 10
+      *[10] = 659
+      *[11] = 7
+      [12] = 666
+      [13] = 0
+      [14] = 7433280
+      [15] = 0
+      c[16](second canary)(00000000007114e0) = badded
+   }
+   file_with_errors[000000000061fdf0] = 00007ff91555fa90
+   stack_end_canary = badded
+}
+
