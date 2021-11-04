@@ -1,6 +1,9 @@
 #include "stack.h"
 #include "stack.cpp"
 
+/**
+ * Do not forget to close the file_with_errors at the end!
+ */
 int main()
 {
     int is_error;

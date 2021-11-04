@@ -43,27 +43,27 @@ int stack_push(Stack* stack1, int value)
     #ifdef DATA_USE_CANARY
         if(stack1->current_size > stack1->capacity){
 
-            if((new_memory = (int*)realloc(stack1->data, (stack1->current_size * CHANGE + 2) * sizeof(stack1->data[0]))) == NULL){
+            if((new_memory = (int*)realloc(stack1->data, (stack1->current_size * stack1->push_change + 2) * sizeof(stack1->data[0]))) == NULL){
                 CHECKSTACK(NOT_MEMORY);
                 return NOT_MEMORY;
             }
             else{
                 stack1->data = new_memory;
 
-                *(stack1->data + stack1->current_size * CHANGE + 1) = *(stack1->data + stack1->current_size); //replace end canary
+                *(stack1->data + stack1->current_size * stack1->push_change + 1) = *(stack1->data + stack1->current_size); //replace end canary
 
-                stack1->capacity = stack1->current_size * CHANGE;
+                stack1->capacity = stack1->current_size * stack1->push_change;
 
-                if(CHANGE == 2)
-                    CHANGE = 3;
+                if(stack1->push_change == 2)
+                    stack1->pop_change = 3;
                 else
-                    CHANGE = 2;
+                    stack1->pop_change = 2;
             }
         }
         *(stack1->data + stack1->current_size) = value;  //add new value in stack
     #else
         if(stack1->current_size > stack1->capacity){
-            if((new_memory = (int*)realloc(stack1->data, stack1->current_size * CHANGE * sizeof(stack1->data[0]))) == NULL){
+            if((new_memory = (int*)realloc(stack1->data, stack1->current_size * stack1->push_change * sizeof(stack1->data[0]))) == NULL){
                 CHECKSTACK(NOT_MEMORY);
                 return NOT_MEMORY;
             }
@@ -71,12 +71,12 @@ int stack_push(Stack* stack1, int value)
             else{
                 stack1->data = new_memory;
 
-                stack1->capacity = stack1->current_size * CHANGE;
+                stack1->capacity = stack1->current_size * stack1->push_change;
 
-                if(CHANGE == 2)
-                    CHANGE = 3;
+                if(stack1->push_change == 2)
+                    stack1->pop_change = 3;
                 else
-                    CHANGE = 2;
+                    stack1->pop_change = 2;
 
             }
         }
@@ -106,21 +106,21 @@ int stack_pop(Stack* stack1)
 
     stack1->current_size--;
 
-    if(stack1->current_size <= stack1->capacity / CHANGE){
+    if(stack1->current_size <= stack1->capacity / stack1->pop_change){
         #ifdef DATA_USE_CANARY
-            stack1->data[stack1->capacity / CHANGE + 1] = stack1->data[stack1->capacity + 1]; //end canary
+            stack1->data[stack1->capacity / stack1->pop_change + 1] = stack1->data[stack1->capacity + 1]; //end canary
 
-            stack1->data = (int*)realloc(stack1->data, (stack1->capacity / CHANGE + 2) * sizeof(stack1->data[0]));
+            stack1->data = (int*)realloc(stack1->data, (stack1->capacity / stack1->pop_change + 2) * sizeof(stack1->data[0]));
         #else
-            stack1->data = (int*)realloc(stack1->data, stack1->capacity / CHANGE * sizeof(stack1->data[0]));
+            stack1->data = (int*)realloc(stack1->data, stack1->capacity / stack1->pop_change * sizeof(stack1->data[0]));
         #endif // DATA_USE_CANARY
 
-        stack1->capacity = stack1->capacity / CHANGE;
+        stack1->capacity = stack1->capacity / stack1->pop_change;
 
-        if(CHANGE == 2)
-            CHANGE = 3;
+        if(stack1->pop_change == 2)
+            stack1->push_change = 3;
         else
-            CHANGE = 2;
+            stack1->push_change = 2;
     }
 
     CHECKSTACK(ALL_OK)
@@ -214,7 +214,7 @@ int stack_dump(Stack* stack1, errors_t reason)
     if(error == ALL_OK)
         fprintf(stack1->file_with_errors, "(ok)\n");
     else
-        //fprintf(stack1->file_with_errors, "ERROR %d %s", error, error);
+        fprintf(stack1->file_with_errors, "ERROR %d %s", error, error_names[abs(error)]);
 
     fprintf(stack1->file_with_errors, "{\n");
 

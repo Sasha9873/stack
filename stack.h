@@ -7,7 +7,7 @@
     #include <cstring>
     #include <cmath>
 
-    #define CHECK 2
+    #define CHECK 0
 
     #if CHECK >= 2
         #define STACK_USE_HASH
@@ -24,12 +24,11 @@
         stack_dump(stack1, reason);\
     }
 
-    const int POISON = 666;
-    int* POINTER_13 = (int*)13;
-    int CHANGE = 2;
-    const int CANARY_VALUE = 0xBADDED;
-    int previous_hash_value;
-    int hash_value;
+    static const int POISON = 666;
+    static int* POINTER_13 = (int*)13;
+    static const int CANARY_VALUE = 0xBADDED;
+    static int previous_hash_value;
+    static int hash_value;
 
     struct Stack
     {
@@ -37,9 +36,12 @@
         int begin_canary = CANARY_VALUE;
         #endif
 
-        size_t capacity = 1; //требуемый размер массива
+        size_t capacity = 0; //требуемый размер массива
         size_t current_size = 0;//текущий размер массива
         int *data = POINTER_13; //адрес массива data[capacity]
+
+        int pop_change = 2;
+        int push_change = 2;
 
         FILE* file_with_errors = NULL;
 
@@ -61,7 +63,7 @@
         "Wrong begin data canary",
         "Wrong end data canary",
         "Bad data pointer",
-        "Capacity smaller then size",
+        "Capacity smaller then size",    //12
         "Wrong hash"
     };
 
